@@ -1,0 +1,1532 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Daily Report</title>
+<meta content='application/vnd.ms-excel;charset=UTF-8' http-equiv=Content-type />
+<meta name=ProgId content=Excel.Sheet />
+<meta name=Generator content="Microsoft Excel 11">
+<style type="text/css">
+<!--table
+@page{}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+  <x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions><x:Panes>
+    </x:Panes></x:WorksheetOptions>
+    </x:ExcelWorksheet></x:ExcelWorksheets>
+  </x:ExcelWorkbook>
+</xml>
+<![endif]-->
+</head>
+<body>
+<!-- SECTION: PH -->
+<table class="PH">
+<tr>
+</tr>
+</table>
+<!-- SECTION: Detail2 -->
+<table class="Detail2">
+<tr>
+<td align="center" colspan=20 style="vnd.ms-excel.numberformat:@"><b></b></td>
+</tr>
+<tr>
+<td align="center" colspan=20 style="vnd.ms-excel.numberformat:@"><b>Báo cáo chuyên cần hàng ngày</b></td>
+</tr>
+<tr>
+<td align="center" colspan=20 style="vnd.ms-excel.numberformat:@"><b>2026-10-08 00:00:00 - 2026-10-08 23:59:59</b></td>
+</tr>
+<tr>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Số</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>ID Người</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Tên</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Bộ phận</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Vị trí</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Giới tính</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Ngày:</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Tuần</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Thời gian biểu</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Đăng ký</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Ra</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Công việc</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Tăng ca</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Đã tham dự</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Muộn</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Về sớm</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Vắng mặt</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Thoát</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Trạng thái</b></td>
+<td align="center" style="vnd.ms-excel.numberformat:@"><b>Bản ghi</b></td>
+</tr>
+</table>
+<!-- SECTION: Daily_Report -->
+<table class="Daily_Report">
+<tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">1</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VÕ NGUYÊN KHANG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">2</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">ĐỖ VĂN MÒI</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">3</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">102</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HÀ THỊ KIM NGÂN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">4</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">103</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HUỲNH PHƯƠNG VÂN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:56:29</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:56:25</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">600</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:56:29 17:56:25</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">105</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">PHAN THỊ THANH NGÂN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:59:57</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:02:57</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">543</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:59:57 08:00:00 17:02:54 17:02:57</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">6</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">108</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HUỲNH THỊ LIỄU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:52:47</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:03:31</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">611</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:52:47 06:52:50 06:52:53 06:52:56 17:03:24 17:03:28 17:03:31</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">7</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">109</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ THANH TIÊN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:59:07</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:16:22</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">557</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:59:07 17:16:22</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">8</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">110</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HUỲNH THỊ BÍCH NGỌC</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:59:18</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:06:20</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">547</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:59:18 07:59:22 17:06:16 17:06:20</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">9</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">112</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ KIM PHO</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:24:42</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:40:25</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">856</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:24:42 20:40:25</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">10</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">113</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">LÊ THỊ KIM NGÂN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:08:58</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:56:16</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">587</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:08:58 17:56:16</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">11</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">115</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ THU THẢO</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:00:38</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:03:46</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">543</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:00:38 17:03:43 17:03:46</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">12</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">116</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">ĐỖ THÀNH NHẪN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:10:26</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:47:24</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">877</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:10:26 20:47:24</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">13</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">119</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">LÊ VĂN TƯƠI</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:49:57</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:30:48</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">821</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:49:57 06:50:00 20:30:43 20:30:45 20:30:48</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">14</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0271</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRẦN MINH VŨ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">15</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0302</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">PHẠM VĂN QUI</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">16</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0313</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN MINH TÂM</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:54:03</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:40:43</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">827</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:54:03 20:40:43</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">17</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0316</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN VĂN GÒ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">18</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0323</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ VIỆT HÀ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:58:01</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:08:25</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">550</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:58:01 07:58:03 07:58:06 17:08:22 17:08:25</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">19</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0348</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRẦN TRẤN ĐÔ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:59:26</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:40:10</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">821</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:59:26 20:40:10</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">20</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0349</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">LÊ VĂN TUYẾN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">21</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0412</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN VĂN QUI</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:59:31</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:40:18</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">821</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:59:31 06:59:34 20:40:15 20:40:18</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">22</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0426</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HỒ PHẠM THÚY QUYỀN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:56:53</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:08:33</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">552</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">07:56:53 17:08:30 17:08:33</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">23</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0429</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VÕ VĂN KHANH</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">24</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0430</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">ĐOÀN MINH TÂM</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:58:06</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:31:06</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">813</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:58:06 20:31:06</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">25</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0450</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">LƯƠNG PHƯỚC DỄ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:48:34</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">20:40:30</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">832</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:48:34 20:40:30</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">26</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0505</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ QUẾ TRÂN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">27</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VTS0522</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRẦN MINH QUANG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/CTY VTS</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">28</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1101</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HOÀNG VĂN HÙNG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">29</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1102</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">LÊ THANH HÀ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">30</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1103</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN CHÁNH THANH</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">31</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1104</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN TRẦN ĐĂNG KHOA</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">32</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1105</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRẦN MỸ PẨU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">33</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1106</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ LOAN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">34</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1107</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN LÊ HOÀNG ÁNH</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">35</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1108</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN ĐĂNG THÔNG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">36</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1109</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">ĐẶNG HOÀNG BẢO</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">37</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1111</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VÕ CHÍ TÂM</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">38</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1112</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">VÕ NGUYÊN KHANG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">39</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1113</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HÀ TRUNG NGHĨA</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">40</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1114</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HUỲNH QUỐC TOÀN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">41</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1115</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">LÊ ĐOÀN NHẬT HẢI</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">42</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1116</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGÔ HOÀNG THÁI</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">43</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1117</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN HOÀNG NGUYÊN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">44</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1118</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN MINH PHỤNG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">45</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1119</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN MINH TIẾN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">46</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1120</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN MINH THUẬN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">47</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1121</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRẦN LAN ANH</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">48</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1122</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">PHAN HOÀNG MINH.jpg</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">49</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1123</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">ĐỖ THỊ KIM LOAN.jpg</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">50</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1244</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRƯƠNG THỊ CẨM GIANG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">51</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1246</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ THANH HẰNG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">16:37:48</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">22</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A-E</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">16:37:48</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">52</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">1284</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYEN VAN MINH</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/KHO BÌNH DƯƠNG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:44:36</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">19:01:23</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">737</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:44:36 06:44:39 08:27:50 08:27:53 19:01:20 19:01:23</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">53</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1542</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRỊNH THỊ NGỌC HƯƠNG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">54</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1570</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">PHẠM HOÀN VŨ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:05:24</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">18:35:13</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">630</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:05:24 18:35:13</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">55</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1609</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRƯƠNG THỊ XUÂN HÀO</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:28:53</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">18:27:34</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">599</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">29</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:28:53 18:27:34</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">56</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1658</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN LÊ XUÂN HUÂN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:21:04</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:43:33</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">562</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">21</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:21:04 17:43:33</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">57</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1913</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGÔ PHÁT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:52:05</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:39:53</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">528</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">528</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">52</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">12</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:52:05 17:39:53</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">58</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS1963</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN QUANG THUẬN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:30:31</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:41:23</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">551</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">31</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:30:31 17:41:23</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">59</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS2225</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">MỴ DUY THẮNG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">60</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS2242</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN UYỂN HẠ VY</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:14:39</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:44:00</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">569</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">15</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:14:39 17:44:00</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">61</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS2263</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN TRỌNG THÀNH</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">62</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS2530</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN KIỀU TRANG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:31:45</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:38:37</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">547</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">32</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:31:45 17:38:37</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">63</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS2531</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">PHẠM THỊ PHƯƠNG TUYẾT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nữ giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:40:20</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:42:34</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">542</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">40</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:40:20 17:39:33 17:42:34</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">64</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TNS2603</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">TRẦN DƯƠNG MINH TRÍ</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG NHÀ BÈ/KD XUAT KHAU</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:25:31</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:49:40</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">564</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">26</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">L-W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">08:25:31 17:49:40</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">65</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">11120</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THỊ NGỌC HUYỀN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/KT VIET NHAT</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">HC(08:00:00-17:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">540</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">A</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">66</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">230018</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN THANH PHONG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/BẢO VỆ MỸ YÊN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">CA NGAY  (06:00:00-18:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">05:45:39</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">18:01:18</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">720</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">736</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">05:45:39 05:45:42 05:45:45 18:01:11 18:01:15 18:01:18</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">67</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">230021</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">THÁI VĂN TÈO</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/BẢO VỆ MỸ YÊN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">CA NGAY  (06:00:00-18:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">05:48:36</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">18:02:44</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">720</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">734</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">05:48:36 18:02:44</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">68</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">230022</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">PHAN HỒNG XẢO</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/BẢO VỆ MỸ YÊN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">CA DEM(18:00:00-06:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:44:15</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:00:20</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">720</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">736</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:01:03 06:01:06 06:01:09 17:44:15 17:44:18 17:44:21</td>
+</tr>
+<td align="center" style="vnd.ms-excel.numberformat:@">69</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">231416</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">NGUYỄN KỲ TRANG</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">New Organization/VĂN PHÒNG MỸ YÊN/BẢO VỆ MỸ YÊN</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">-</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Nam giới</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">2026-10-08</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">Thứ 5</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">CA DEM(18:00:00-06:00:00)</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">17:29:41</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:00:33</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">720</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">751</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">0</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">W</td>
+<td align="center" style="vnd.ms-excel.numberformat:@">06:00:46 06:00:49 17:29:41 17:29:44</td>
+</tr>
+</table>
+<!-- SECTION: Detail3 -->
+<table class="Detail3">
+<tr>
+<td nowrap="nowrap" align="left" style="vnd.ms-excel.numberformat:@">Lưu ý:  LV = Áp Dụng Cho Nghỉ Phép/Đi Công Tác; L = Muộn; E = Nghỉ sớm; W = Đã tham dự; OT1 = Tăng ca 1; OT2 = Tăng ca 2; OT3 = Tăng ca 3; A = Vắng mặt; # = Cuối tuần;
+Đơn Vị Tối Thiểu:  Công việc-phút; Tăng ca-phút; Đã tham dự-phút; Muộn-phút; Về sớm-phút; Vắng mặt-phút; Thoát-phút;
+Định dạng thời gian::  Công việc-MM; Tăng ca-MM; Đã tham dự-MM; Muộn-MM; Về sớm-MM; Vắng mặt-MM; Thoát-MM;</td>
+</tr>
+<tr>
+<td nowrap="nowrap" align="left" style="vnd.ms-excel.numberformat:@">Ngày/Giờ: 2026-10-09 14:04:16</td>
+</tr>
+</table>
+<!-- SECTION: PF -->
+<table class="PF">
+<tr>
+</tr>
+</table>
+</body>
+</html>
