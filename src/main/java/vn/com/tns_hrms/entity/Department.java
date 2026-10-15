@@ -36,7 +36,7 @@ public class Department {
     @Column(length = 100, nullable = false, unique = true)
     private String name;
 
-    // one department has many employees; an employee belongs to exactly one department
+    // a department may have any number of employees, including none; an employee belongs to at most one department
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
     @JsonIgnore
     private List<Employee> employees = new ArrayList<>();

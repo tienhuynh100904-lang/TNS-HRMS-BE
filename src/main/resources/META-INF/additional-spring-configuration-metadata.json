@@ -29,6 +29,46 @@
       "name": "app.seed.admin-password",
       "type": "java.lang.String",
       "description": "Password of the default admin account created on first start."
+    },
+    {
+      "name": "app.attendance.pull.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Run the nightly pull of punches from the attendance devices. Off by default so a developer machine never contacts a real device."
+    },
+    {
+      "name": "app.attendance.pull.cron",
+      "type": "java.lang.String",
+      "description": "Cron expression (Asia/Ho_Chi_Minh time) of the nightly pull. Default 01:00."
+    },
+    {
+      "name": "app.attendance.pull.python",
+      "type": "java.lang.String",
+      "description": "Command that starts Python, used to run the pull script."
+    },
+    {
+      "name": "app.attendance.pull.script-dir",
+      "type": "java.lang.String",
+      "description": "Folder that holds the pull scripts. Each device names its script (default zk_pull_punches.py)."
+    },
+    {
+      "name": "app.attendance.pull.output-dir",
+      "type": "java.lang.String",
+      "description": "Folder for the temporary CSV and log of each pull."
+    },
+    {
+      "name": "app.attendance.pull.timeout-minutes",
+      "type": "java.lang.Integer",
+      "description": "A pull that takes longer than this many minutes is stopped."
+    },
+    {
+      "name": "app.attendance.pull.overlap-hours",
+      "type": "java.lang.Integer",
+      "description": "Each pull re-reads this many hours before the newest stored punch; duplicates are dropped by the importer."
+    },
+    {
+      "name": "app.attendance.pull.devices",
+      "type": "java.util.List",
+      "description": "Devices to pull, each with branch-code, ip, port (default 4370), password (default 0) and script (default zk_pull_punches.py)."
     }
   ]
 }

@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,17 +21,22 @@ import lombok.Setter;
 
 /**
  * One raw punch pulled from a device. Insert-only: a row is never updated after it is written, and a punch is
- * identified by (branch_code, employee_card_id, punch_time), not by the device record id, so pulling the same period
- * again (or from a device that renumbered its records) cannot create duplicates. See PunchImportService.
- * The punch is linked to the machine it came from (device) and to the branch of that machine (branch).
+ * identified by (branch_code, employee_code, punch_time), not by the device record id, so pulling the same period
+ * again (or from a device that renumbered its records) cannot create duplicates.
+ * The punch is linked to the branch it was made at (branch), whatever branch the employee belongs to.
  */
 @Entity
 @Table(name = "punch_raw", uniqueConstraints = @UniqueConstraint(name = "uq_punch", columnNames = { "branch_code",
-        "employee_card_id", "punch_time" }), indexes = @Index(name = "ix_punch_branch_time", columnList = "branch_code, punch_time"))
+        "employee_code", "punch_time" }), indexes = @Index(name = "ix_punch_branch_time", columnList = "branch_code, punch_time"))
 @NoArgsConstructor
 @Getter
 @Setter
 public class PunchRaw {
+    public enum Direction {
+        IN,
+        OUT
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -42,17 +49,13 @@ public class PunchRaw {
     @JoinColumn(name = "branch_code", insertable = false, updatable = false)
     private Branch branch;
 
-    // the machine the punch was pulled from; its branch is always the branch_code of this row
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "device_id", nullable = false)
-    private Device device;
-
-    // company wide employee code; the device does not report it, so it stays null until the card is linked
-    @Column(length = 20)
+    // company wide employee code: the person as the device reports them (ZK: user_id, WiseEye: StaffID);
+    // part of the key that identifies a punch
+    @Column(name = "employee_code", length = 20, nullable = false)
     private String employeeCode;
 
-    // card code as the device reports it (user_id); part of the key that identifies a punch
-    @Column(length = 20, nullable = false)
+    // number of the card used, only when the device reads cards (WiseEye: CardID); null for face or fingerprint
+    @Column(name = "employee_card_id", length = 20)
     private String employeeCardId;
 
     // date + time of the punch (device local time)
@@ -65,4 +68,9 @@ public class PunchRaw {
 
     // Hình thức xác thực
     private Integer verifyType;
+
+    // in or out as the device reports it (WiseEye: TA 1 = IN, 2 = OUT, 0 = unknown); null when the device does not say
+    @Enumerated(EnumType.STRING)
+    @Column(length = 10)
+    private Direction direction;
 }

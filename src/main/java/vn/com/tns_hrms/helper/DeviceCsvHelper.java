@@ -50,7 +50,7 @@ public class DeviceCsvHelper {
             ReqPunch punch = new ReqPunch();
             if (cols.length >= 4) {
                 punch.setSourceRef(cols[0]);
-                punch.setStaffCode(cols[1]);
+                punch.setEmployeeCode(cols[1]);
                 punch.setPunchTime(parseTime(cols[2]));
                 punch.setVerifyType(cols[3].isBlank() ? null : parseInteger(cols[3]));
             }

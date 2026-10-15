@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import vn.com.tns_hrms.entity.PunchRaw;
 
 /** One punch as read from a device, before it is stored in punch_raw. */
 @Getter
@@ -13,9 +14,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ReqPunch {
-    private String staffCode;
+    // code of the person on the device (ZK: user_id), stored as the employee code
+    private String employeeCode;
     private LocalDateTime punchTime;
     // the device record id, tracing only
     private String sourceRef;
     private Integer verifyType;
+    // null when the device does not report whether the punch is an in or an out
+    private PunchRaw.Direction direction;
+
+    public ReqPunch(String employeeCode, LocalDateTime punchTime, String sourceRef, Integer verifyType) {
+        this(employeeCode, punchTime, sourceRef, verifyType, null);
+    }
 }

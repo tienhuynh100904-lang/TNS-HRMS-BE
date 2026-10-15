@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import vn.com.tns_hrms.config.seed.AdminAccountSeeder;
+import vn.com.tns_hrms.config.seed.BranchSeeder;
 import vn.com.tns_hrms.config.seed.PermissionSeeder;
 import vn.com.tns_hrms.config.seed.RoleSeeder;
 import vn.com.tns_hrms.entity.Permission;
@@ -19,12 +20,14 @@ public class DatabaseInitializer implements CommandLineRunner {
     private final PermissionSeeder permissionSeeder;
     private final RoleSeeder roleSeeder;
     private final AdminAccountSeeder adminAccountSeeder;
+    private final BranchSeeder branchSeeder;
 
     public DatabaseInitializer(PermissionSeeder permissionSeeder, RoleSeeder roleSeeder,
-            AdminAccountSeeder adminAccountSeeder) {
+            AdminAccountSeeder adminAccountSeeder, BranchSeeder branchSeeder) {
         this.permissionSeeder = permissionSeeder;
         this.roleSeeder = roleSeeder;
         this.adminAccountSeeder = adminAccountSeeder;
+        this.branchSeeder = branchSeeder;
     }
 
     @Override
@@ -33,6 +36,7 @@ public class DatabaseInitializer implements CommandLineRunner {
         List<Permission> permissions = permissionSeeder.seed();
         roleSeeder.seed(permissions);
         adminAccountSeeder.seed();
+        branchSeeder.seed();
         log.info(">>> END INIT DATABASE");
     }
 }
