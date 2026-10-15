@@ -1,5 +1,7 @@
 package vn.com.tns_hrms.entity;
 
+import org.hibernate.annotations.Nationalized;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -19,6 +21,8 @@ public class Branch {
     @Column(length = 20)
     private String branchCode;
 
+    // Vietnamese text: stored as nvarchar (Unicode), a plain varchar column would turn the accents into "?"
+    @Nationalized
     @Column(length = 100)
     private String branchName;
 
