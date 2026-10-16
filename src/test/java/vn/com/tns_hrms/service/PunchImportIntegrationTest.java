@@ -25,7 +25,9 @@ import vn.com.tns_hrms.repository.PunchRawRepository;
 class PunchImportIntegrationTest {
     // seeded from seed/branches.csv
     private static final String BRANCH = "PKD_ND";
-    private static final Path PUNCH_CSV = Path.of("src/doc/NhaBe_ChamCong.csv");
+    // same layout as a file pulled from the device, with the awkward rows seen in real data:
+    // a row without user_id, the same person twice in the same second, a time that could not be decoded
+    private static final Path PUNCH_CSV = Path.of("src/test/resources/punches_sample.csv");
 
     @Autowired
     PunchImportService punchImportService;
@@ -44,17 +46,20 @@ class PunchImportIntegrationTest {
         List<ReqPunch> punches = csvHelper.readPunches(PUNCH_CSV);
 
         ResImportResult first = punchImportService.importPunches(BRANCH, punches);
-        // 1 row has no user_id, 1 row repeats the same card and second inside the file
-        assertEquals(punches.size(), first.getReceived());
-        assertEquals(1, first.getSkipped());
+        // 8 rows: 1 without user_id and 1 with an unreadable time are skipped, 1 repeats the same person and
+        // second inside the file, the other 5 are new
+        assertEquals(8, first.getReceived());
+        assertEquals(2, first.getSkipped());
         assertEquals(1, first.getDuplicates());
-        assertEquals(punches.size() - 2, first.getInserted());
-        assertEquals(first.getInserted(), punchRawRepository.count());
+        assertEquals(5, first.getInserted());
+        assertEquals(5, punchRawRepository.count());
 
-        // first line of the file: 1,2,2023-08-16 14:59:00,15,255,... -> user_id 2 is the employee code, no card
+        // first line of the file: 1,2,2023-08-16 14:59:00,15,255,... -> user_id 2 is the user code (not an employee
+        // code, that comes from the employee that owns the user code), and there is no card
         PunchRaw firstLine = punchRawRepository.findAll().stream().filter(p -> "1".equals(p.getSourceRef()))
                 .findFirst().orElseThrow();
-        assertEquals("2", firstLine.getEmployeeCode());
+        assertEquals("2", firstLine.getUserCode());
+        assertEquals(null, firstLine.getEmployeeCode());
         assertEquals(null, firstLine.getEmployeeCardId());
         assertEquals(LocalDateTime.of(2023, 8, 16, 14, 59, 0), firstLine.getPunchTime());
         assertEquals(15, firstLine.getVerifyType());
@@ -62,8 +67,9 @@ class PunchImportIntegrationTest {
 
         ResImportResult second = punchImportService.importPunches(BRANCH, punches);
         assertEquals(0, second.getInserted());
-        assertEquals(first.getInserted() + 1, second.getDuplicates());
-        assertEquals(first.getInserted(), punchRawRepository.count());
+        assertEquals(6, second.getDuplicates());
+        assertEquals(2, second.getSkipped());
+        assertEquals(5, punchRawRepository.count());
     }
 
     @Test

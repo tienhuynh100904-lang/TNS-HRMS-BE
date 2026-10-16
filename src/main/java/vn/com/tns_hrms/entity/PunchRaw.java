@@ -21,13 +21,13 @@ import lombok.Setter;
 
 /**
  * One raw punch pulled from a device. Insert-only: a row is never updated after it is written, and a punch is
- * identified by (branch_code, employee_code, punch_time), not by the device record id, so pulling the same period
+ * identified by (branch_code, user_code, punch_time), not by the device record id, so pulling the same period
  * again (or from a device that renumbered its records) cannot create duplicates.
  * The punch is linked to the branch it was made at (branch), whatever branch the employee belongs to.
  */
 @Entity
 @Table(name = "punch_raw", uniqueConstraints = @UniqueConstraint(name = "uq_punch", columnNames = { "branch_code",
-        "employee_code", "punch_time" }), indexes = @Index(name = "ix_punch_branch_time", columnList = "branch_code, punch_time"))
+        "user_code", "punch_time" }), indexes = @Index(name = "ix_punch_branch_time", columnList = "branch_code, punch_time"))
 @NoArgsConstructor
 @Getter
 @Setter
@@ -49,9 +49,13 @@ public class PunchRaw {
     @JoinColumn(name = "branch_code", insertable = false, updatable = false)
     private Branch branch;
 
-    // company wide employee code: the person as the device reports them (ZK: user_id, WiseEye: StaffID);
-    // part of the key that identifies a punch
-    @Column(name = "employee_code", length = 20, nullable = false)
+    // the person as the device reports them (face / fingerprint machines: user_id / uid); part of the key that
+    // identifies a punch. It is NOT the employee code: employees.user_code maps it to the employee.
+    @Column(name = "user_code", length = 20, nullable = false)
+    private String userCode;
+
+    // employee code, only when the device itself reports it (WiseEye: StaffID); null for face / fingerprint machines
+    @Column(name = "employee_code", length = 20)
     private String employeeCode;
 
     // number of the card used, only when the device reads cards (WiseEye: CardID); null for face or fingerprint

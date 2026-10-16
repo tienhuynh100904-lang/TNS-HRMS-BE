@@ -33,12 +33,12 @@ import lombok.Setter;
  * its work_date.
  * The table is derived data: to recompute an employee, delete its rows in the affected period and insert the new ones
  * (never update a row to another check_in_time), then punch_raw stays the only source of truth.
- * All punches of a session are the punch_raw rows of the same (branch_code, employee_code) with punch_time between
+ * All punches of a session are the punch_raw rows of the same (branch_code, user_code) with punch_time between
  * check_in_time and check_out_time.
  */
 @Entity
 @Table(name = "attendance", uniqueConstraints = @UniqueConstraint(name = "uq_attendance", columnNames = {
-        "branch_code", "employee_code", "check_in_time" }), indexes = @Index(name = "ix_attendance_work_date", columnList = "branch_code, employee_code, work_date"))
+        "branch_code", "user_code", "check_in_time" }), indexes = @Index(name = "ix_attendance_work_date", columnList = "branch_code, user_code, work_date"))
 @NoArgsConstructor
 @Getter
 @Setter
@@ -60,13 +60,13 @@ public class Attendance {
     @Column(name = "work_date", nullable = false)
     private LocalDate workDate;
 
-    // employee code of the punches of the session (punch_raw.employee_code)
-    @Column(name = "employee_code", length = 20, nullable = false)
-    private String employeeCode;
+    // user code of the punches of the session (punch_raw.user_code)
+    @Column(name = "user_code", length = 20, nullable = false)
+    private String userCode;
 
-    // soft, read-only link to the employee: null when the code is not (yet) a known employee
+    // soft, read-only link to the employee that owns this user code: null when no employee has it (yet)
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "employee_code", referencedColumnName = "employee_code", insertable = false, updatable = false, foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
+    @JoinColumn(name = "user_code", referencedColumnName = "user_code", insertable = false, updatable = false, foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
     @NotFound(action = NotFoundAction.IGNORE)
     private Employee employee;
 

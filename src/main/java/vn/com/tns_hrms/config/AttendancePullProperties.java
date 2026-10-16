@@ -20,6 +20,9 @@ public class AttendancePullProperties {
 
     private String cron = "0 0 1 * * *";
 
+    // also pull once as soon as the application has started, without waiting for the cron time (for testing)
+    private boolean runOnStartup = false;
+
     // command that starts Python
     private String python = "python";
 

@@ -21,7 +21,7 @@ import vn.com.tns_hrms.repository.PunchRawRepository;
 /**
  * Writes punches pulled from a device into punch_raw without ever duplicating or overwriting a row.
  * <ol>
- * <li>A punch is identified by (branch_code, employee_code, punch_time), not by the device record id, so it does
+ * <li>A punch is identified by (branch_code, user_code, punch_time), not by the device record id, so it does
  * not matter how often, or in how many overlapping pulls, the same period is read.</li>
  * <li>Repeats inside the batch are dropped (the first one wins), then the ones already stored are dropped.
  * Only the remaining new punches are inserted; existing rows are never updated.</li>
@@ -62,7 +62,7 @@ public class PunchImportService {
         LocalDateTime to = null;
 
         for (ReqPunch punch : punches) {
-            String code = punch.getEmployeeCode() == null ? "" : punch.getEmployeeCode().trim();
+            String code = punch.getUserCode() == null ? "" : punch.getUserCode().trim();
             if (code.isEmpty() || code.length() > MAX_CODE_LENGTH || punch.getPunchTime() == null) {
                 skipped++;
                 continue;
@@ -74,7 +74,7 @@ public class PunchImportService {
 
             PunchRaw row = new PunchRaw();
             row.setBranchCode(branchCode);
-            row.setEmployeeCode(code);
+            row.setUserCode(code);
             row.setPunchTime(punch.getPunchTime());
             row.setSourceRef(punch.getSourceRef());
             row.setVerifyType(punch.getVerifyType());
@@ -93,10 +93,10 @@ public class PunchImportService {
         if (!candidates.isEmpty()) {
             Set<String> stored = new HashSet<>();
             for (PunchRawRepository.PunchKey stub : punchRawRepository.findKeys(branchCode, from, to)) {
-                stored.add(key(stub.getEmployeeCode(), stub.getPunchTime()));
+                stored.add(key(stub.getUserCode(), stub.getPunchTime()));
             }
             fresh = candidates.stream()
-                    .filter(row -> !stored.contains(key(row.getEmployeeCode(), row.getPunchTime()))).toList();
+                    .filter(row -> !stored.contains(key(row.getUserCode(), row.getPunchTime()))).toList();
             duplicates += candidates.size() - fresh.size();
         }
 
@@ -127,7 +127,7 @@ public class PunchImportService {
     }
 
     // time is part of the key at full precision, so two punches of the same person a second apart both count
-    private static String key(String employeeCode, LocalDateTime punchTime) {
-        return employeeCode + '|' + punchTime;
+    private static String key(String userCode, LocalDateTime punchTime) {
+        return userCode + '|' + punchTime;
     }
 }

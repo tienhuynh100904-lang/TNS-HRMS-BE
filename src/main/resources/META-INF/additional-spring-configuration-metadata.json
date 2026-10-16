@@ -41,6 +41,11 @@
       "description": "Cron expression (Asia/Ho_Chi_Minh time) of the nightly pull. Default 01:00."
     },
     {
+      "name": "app.attendance.pull.run-on-startup",
+      "type": "java.lang.Boolean",
+      "description": "Also pull once as soon as the application has started, without waiting for the cron time. For testing."
+    },
+    {
       "name": "app.attendance.pull.python",
       "type": "java.lang.String",
       "description": "Command that starts Python, used to run the pull script."

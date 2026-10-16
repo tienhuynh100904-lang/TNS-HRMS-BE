@@ -14,8 +14,8 @@ import vn.com.tns_hrms.entity.PunchRaw;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ReqPunch {
-    // code of the person on the device (ZK: user_id), stored as the employee code
-    private String employeeCode;
+    // code of the person on the device (ZK: user_id / uid), stored as the user code
+    private String userCode;
     private LocalDateTime punchTime;
     // the device record id, tracing only
     private String sourceRef;
@@ -23,7 +23,7 @@ public class ReqPunch {
     // null when the device does not report whether the punch is an in or an out
     private PunchRaw.Direction direction;
 
-    public ReqPunch(String employeeCode, LocalDateTime punchTime, String sourceRef, Integer verifyType) {
-        this(employeeCode, punchTime, sourceRef, verifyType, null);
+    public ReqPunch(String userCode, LocalDateTime punchTime, String sourceRef, Integer verifyType) {
+        this(userCode, punchTime, sourceRef, verifyType, null);
     }
 }

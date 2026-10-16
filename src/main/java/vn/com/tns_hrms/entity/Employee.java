@@ -29,11 +29,16 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // company wide employee code (WiseEye: StaffID), unique when set; the key that links punches to the employee
+    // employee code given by HR (WiseEye: StaffID), unique when set
     @Column(name = "employee_code", length = 20, unique = true)
     private String employeeCode;
 
-    // current attendance card code, informational only (cards are reissued, punches are matched by employee_code)
+    // code of the person on the attendance devices (face and fingerprint machines report it as user_id / uid).
+    // One per person and unique across all devices, so it is the link from punch_raw.user_code to the employee.
+    @Column(name = "user_code", length = 20, unique = true)
+    private String userCode;
+
+    // current attendance card code, informational only (cards are reissued, punches are matched by user_code)
     @Column(name = "card_code", length = 20)
     private String cardCode;
 

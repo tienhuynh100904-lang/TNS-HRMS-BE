@@ -13,12 +13,12 @@ import vn.com.tns_hrms.entity.PunchRaw;
 public interface PunchRawRepository extends JpaRepository<PunchRaw, Long> {
     // the natural key of a punch, used to find which punches of an incoming batch are already stored
     interface PunchKey {
-        String getEmployeeCode();
+        String getUserCode();
 
         LocalDateTime getPunchTime();
     }
 
-    @Query("SELECT p.employeeCode AS employeeCode, p.punchTime AS punchTime FROM PunchRaw p "
+    @Query("SELECT p.userCode AS userCode, p.punchTime AS punchTime FROM PunchRaw p "
             + "WHERE p.branchCode = :branchCode AND p.punchTime BETWEEN :from AND :to")
     List<PunchKey> findKeys(@Param("branchCode") String branchCode, @Param("from") LocalDateTime from,
             @Param("to") LocalDateTime to);
