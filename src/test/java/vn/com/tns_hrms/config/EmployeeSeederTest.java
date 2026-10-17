@@ -61,34 +61,35 @@ class EmployeeSeederTest {
     }
 
     @Test
-    void runningAgainNeverDuplicatesOrOverwrites() {
+    void runningAgainNeverDuplicatesOverwritesOrBringsBackWhatWasDeleted() {
         employeeSeeder.seed();
         Employee edited = employeeRepository.findByUserCode("1").orElseThrow();
         edited.setFullName("Tên do người dùng sửa");
         edited.setActive(false);
         employeeRepository.save(edited);
+        Employee deleted = employeeRepository.findByUserCode("2").orElseThrow();
+        employeeRepository.delete(deleted);
 
         employeeSeeder.seed();
 
-        assertEquals(88, employeeRepository.count());
+        assertEquals(87, employeeRepository.count());
+        assertTrue(employeeRepository.findByUserCode("2").isEmpty());
         Employee kept = employeeRepository.findByUserCode("1").orElseThrow();
         assertEquals("Tên do người dùng sửa", kept.getFullName());
         assertEquals(false, kept.isActive());
     }
 
     @Test
-    void anEmployeeThatAlreadyExistsIsSkippedAndTheRestIsAdded() {
+    void doesNothingWhenThereIsAlreadyAnEmployee() {
         Employee manual = new Employee();
-        manual.setEmployeeCode("TNS1224");
+        manual.setEmployeeCode("TNS9999");
         manual.setFullName("Nhập tay");
         employeeRepository.save(manual);
 
         employeeSeeder.seed();
 
-        // 88 rows in the file, the one with TNS1224 already existed (found by employee code)
-        assertEquals(88, employeeRepository.count());
-        assertEquals("Nhập tay", employeeRepository.findAll().stream()
-                .filter(e -> "TNS1224".equals(e.getEmployeeCode())).findFirst().orElseThrow().getFullName());
+        // the file is not read at all: not even the employees that are not in the table yet are added
+        assertEquals(1, employeeRepository.count());
     }
 
     @Test

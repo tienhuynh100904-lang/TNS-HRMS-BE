@@ -16,6 +16,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.multipart.support.MissingServletRequestPartException;
 
 import tools.jackson.databind.exc.InvalidFormatException;
@@ -28,6 +29,12 @@ public class GlobalException {
     @ExceptionHandler({ MissingServletRequestParameterException.class, MissingServletRequestPartException.class })
     public ResponseEntity<ErrorResponse> handleMissingRequestValue(Exception ex) {
         return handleBadRequestException(new BadRequestException(ex.getMessage()));
+    }
+
+    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+    public ResponseEntity<ErrorResponse> handleTypeMismatch(MethodArgumentTypeMismatchException ex) {
+        return handleBadRequestException(
+                new BadRequestException(String.format("Invalid value '%s' for parameter '%s'", ex.getValue(), ex.getName())));
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)

@@ -49,7 +49,18 @@ public class PermissionSeeder {
                 new Permission("Delete Permission", "/api/v1/permissions/{id}", "DELETE", "PERMISSION"),
                 new Permission("Get Permission Stats", "/api/v1/permissions/stats", "GET", "PERMISSION"),
                 new Permission("Get Permission Modules", "/api/v1/permissions/modules", "GET", "PERMISSION"),
-                new Permission("Get All Permissions", "/api/v1/permissions/all", "GET", "PERMISSION"));
+                new Permission("Get All Permissions", "/api/v1/permissions/all", "GET", "PERMISSION"),
+
+                // Attendance
+                new Permission("Get Punch Users", "/api/v1/attendance/users", "GET", "ATTENDANCE"),
+                new Permission("Get Daily Attendance", "/api/v1/attendance/daily", "GET", "ATTENDANCE"),
+                new Permission("Pull Punches Now", "/api/v1/attendance/pull", "POST", "ATTENDANCE"),
+                new Permission("Get Employee Punches", "/api/v1/attendance/monthly", "GET", "ATTENDANCE"),
+
+                // Employee
+                new Permission("Get All Employees", "/api/v1/employees", "GET", "EMPLOYEE"),
+                new Permission("Update Employee", "/api/v1/employees", "PUT", "EMPLOYEE"),
+                new Permission("Delete Employee", "/api/v1/employees/{id}", "DELETE", "EMPLOYEE"));
 
         for (Permission permission : permissions) {
             permissionRepository.findByApiPathAndMethod(permission.getApiPath(), permission.getMethod())

@@ -13,6 +13,6 @@ import lombok.Setter;
 public class ApiResponse<T> {
     private int status;
     private Object message;
-    private T data;
     private String error;
+    private T data;
 }

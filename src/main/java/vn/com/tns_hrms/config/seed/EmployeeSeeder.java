@@ -16,13 +16,13 @@ import vn.com.tns_hrms.repository.DepartmentRepository;
 import vn.com.tns_hrms.repository.EmployeeRepository;
 
 /**
- * Creates the employees listed in classpath:seed/employees.csv
- * (employee_code, user_code, card_code, full_name, department_id, active).
+ * Creates the first employees from classpath:seed/employees.csv
+ * (employee_code, user_code, card_code, full_name, department_id, active), only while the employees table is empty.
+ * Once there is any employee the file is no longer read, so employees that were edited, added or deleted afterwards
+ * are never touched or brought back when the application restarts.
  * <ul>
- * <li>Only missing employees are inserted. A row is recognised by its employee_code or its user_code (both are
- * unique): when either already belongs to an employee the row is skipped, so nothing is overwritten or duplicated
- * when the application restarts, and edits made in the database are kept.</li>
- * <li>A row with neither code cannot be recognised again later, so it is skipped with a warning.</li>
+ * <li>A row with neither employee_code nor user_code is skipped with a warning, and so is a row that repeats a code
+ * already used earlier in the file (both codes are unique).</li>
  * <li>department_id is the id of a department as created by DepartmentSeeder; an empty or unknown id leaves the
  * employee without a department (the employee is still created).</li>
  * </ul>
@@ -44,6 +44,10 @@ public class EmployeeSeeder {
     @Transactional
     public void seed() {
         log.info(">>> Init Employees");
+        if (employeeRepository.count() > 0) {
+            log.info("Employees already exist, nothing to seed");
+            return;
+        }
         Map<Long, Department> departments = new HashMap<>();
         for (Department department : departmentRepository.findAll()) {
             departments.put(department.getId(), department);
@@ -52,7 +56,6 @@ public class EmployeeSeeder {
         Set<String> employeeCodes = new HashSet<>();
         Set<String> userCodes = new HashSet<>();
         int created = 0;
-        int existing = 0;
         int skipped = 0;
         for (String[] row : SeedCsv.read(EMPLOYEES_CSV, 6)) {
             String employeeCode = blankToNull(row[0]);
@@ -70,11 +73,6 @@ public class EmployeeSeeder {
                 skipped++;
                 continue;
             }
-            if ((employeeCode != null && employeeRepository.existsByEmployeeCode(employeeCode))
-                    || (userCode != null && employeeRepository.existsByUserCode(userCode))) {
-                existing++;
-                continue;
-            }
 
             Employee employee = new Employee();
             employee.setEmployeeCode(employeeCode);
@@ -86,7 +84,7 @@ public class EmployeeSeeder {
             employeeRepository.save(employee);
             created++;
         }
-        log.info("Created {} employee(s), {} already existed, {} skipped", created, existing, skipped);
+        log.info("Created {} employee(s), {} skipped", created, skipped);
     }
 
     private static Department department(String rawId, Map<Long, Department> departments, String employeeName) {

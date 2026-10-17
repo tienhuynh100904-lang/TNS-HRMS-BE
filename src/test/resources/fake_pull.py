@@ -4,6 +4,7 @@ import argparse
 import csv
 import os
 import sys
+import time
 
 p = argparse.ArgumentParser()
 p.add_argument("--ip", required=True)
@@ -18,6 +19,9 @@ if args.ip == "fail":
     sys.exit(1)
 
 here = os.path.dirname(os.path.abspath(__file__))
+sleep_file = os.path.join(here, "fake_sleep.txt")
+if os.path.exists(sleep_file):
+    time.sleep(float(open(sleep_file).read()))
 with open(os.path.join(here, "fake_data.csv"), encoding="utf-8", newline="") as f:
     reader = csv.reader(f)
     header = next(reader)
