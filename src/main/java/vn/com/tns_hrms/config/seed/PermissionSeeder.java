@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import vn.com.tns_hrms.entity.Permission;
 import vn.com.tns_hrms.repository.PermissionRepository;
@@ -23,15 +24,17 @@ public class PermissionSeeder {
         this.permissionRepository = permissionRepository;
     }
 
+    @Transactional
     public List<Permission> seed() {
         log.info(">>> Init Permissions");
 
         List<Permission> permissions = List.of(
-                // Account
-                new Permission("Get All Accounts", "/api/v1/accounts", "GET", "ACCOUNT"),
-                new Permission("Get Account Detail", "/api/v1/accounts/{id}", "GET", "ACCOUNT"),
-                new Permission("Create Account", "/api/v1/accounts", "POST", "ACCOUNT"),
-                new Permission("Get Account Stats", "/api/v1/accounts/stats", "GET", "ACCOUNT"),
+                // Client (OAuth2 clients that call the API)
+                new Permission("Get All Clients", "/api/v1/clients", "GET", "CLIENT"),
+                new Permission("Get Client Detail", "/api/v1/clients/{id}", "GET", "CLIENT"),
+                new Permission("Create Client", "/api/v1/clients", "POST", "CLIENT"),
+                new Permission("Update Client", "/api/v1/clients", "PUT", "CLIENT"),
+                new Permission("Renew Client Secret", "/api/v1/clients/{id}/secret", "POST", "CLIENT"),
 
                 // Role
                 new Permission("Get All Roles", "/api/v1/roles", "GET", "ROLE"),
@@ -62,6 +65,8 @@ public class PermissionSeeder {
                 new Permission("Update Employee", "/api/v1/employees", "PUT", "EMPLOYEE"),
                 new Permission("Delete Employee", "/api/v1/employees/{id}", "DELETE", "EMPLOYEE"));
 
+        removeAccountPermissions();
+
         for (Permission permission : permissions) {
             permissionRepository.findByApiPathAndMethod(permission.getApiPath(), permission.getMethod())
                     .ifPresentOrElse(existing -> {
@@ -72,5 +77,17 @@ public class PermissionSeeder {
         }
 
         return permissionRepository.findAll();
+    }
+
+    // The account endpoints no longer exist (callers are OAuth2 clients now): drop their permissions from an old
+    // database, and from the roles they were granted to.
+    private void removeAccountPermissions() {
+        for (Permission stale : permissionRepository.findAll()) {
+            if ("ACCOUNT".equals(stale.getModule()) || stale.getApiPath().startsWith("/api/v1/accounts")) {
+                stale.getRoles().forEach(role -> role.getPermissions().remove(stale));
+                permissionRepository.delete(stale);
+                log.info("Removed obsolete permission {} {}", stale.getMethod(), stale.getApiPath());
+            }
+        }
     }
 }

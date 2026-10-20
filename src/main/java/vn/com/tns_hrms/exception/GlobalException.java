@@ -92,7 +92,7 @@ public class GlobalException {
 
     @ExceptionHandler(AuthenticationException.class)
     public ResponseEntity<ErrorResponse> handleAuthenticationException(AuthenticationException e) {
-        return build(HttpStatus.UNAUTHORIZED, "Unauthorized", "Invalid email or password");
+        return build(HttpStatus.UNAUTHORIZED, "Unauthorized", "Invalid client credentials");
     }
 
     @ExceptionHandler(JwtException.class)

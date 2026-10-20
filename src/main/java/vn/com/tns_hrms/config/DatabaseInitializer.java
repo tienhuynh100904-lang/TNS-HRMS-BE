@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import vn.com.tns_hrms.config.seed.AdminAccountSeeder;
+import vn.com.tns_hrms.config.seed.AdminClientSeeder;
 import vn.com.tns_hrms.config.seed.BranchSeeder;
 import vn.com.tns_hrms.config.seed.DepartmentSeeder;
 import vn.com.tns_hrms.config.seed.EmployeeSeeder;
@@ -21,17 +21,17 @@ public class DatabaseInitializer implements CommandLineRunner {
 
     private final PermissionSeeder permissionSeeder;
     private final RoleSeeder roleSeeder;
-    private final AdminAccountSeeder adminAccountSeeder;
+    private final AdminClientSeeder adminClientSeeder;
     private final BranchSeeder branchSeeder;
     private final DepartmentSeeder departmentSeeder;
     private final EmployeeSeeder employeeSeeder;
 
     public DatabaseInitializer(PermissionSeeder permissionSeeder, RoleSeeder roleSeeder,
-            AdminAccountSeeder adminAccountSeeder, BranchSeeder branchSeeder, DepartmentSeeder departmentSeeder,
+            AdminClientSeeder adminClientSeeder, BranchSeeder branchSeeder, DepartmentSeeder departmentSeeder,
             EmployeeSeeder employeeSeeder) {
         this.permissionSeeder = permissionSeeder;
         this.roleSeeder = roleSeeder;
-        this.adminAccountSeeder = adminAccountSeeder;
+        this.adminClientSeeder = adminClientSeeder;
         this.branchSeeder = branchSeeder;
         this.departmentSeeder = departmentSeeder;
         this.employeeSeeder = employeeSeeder;
@@ -42,7 +42,7 @@ public class DatabaseInitializer implements CommandLineRunner {
         log.info(">>> START INIT DATABASE");
         List<Permission> permissions = permissionSeeder.seed();
         roleSeeder.seed(permissions);
-        adminAccountSeeder.seed();
+        adminClientSeeder.seed();
         branchSeeder.seed();
         departmentSeeder.seed();
         employeeSeeder.seed();

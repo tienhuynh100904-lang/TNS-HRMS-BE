@@ -18,7 +18,6 @@ public class PermissionInterceptorConfiguration implements WebMvcConfigurer {
         registry.addInterceptor(permissionInterceptor)
                 .excludePathPatterns(
                         "/",
-                        "/error",
-                        "/api/v1/auth/**");
+                        "/error");
     }
 }

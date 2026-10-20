@@ -3,7 +3,6 @@ package vn.com.tns_hrms;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.time.LocalDateTime;
@@ -13,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -78,9 +76,7 @@ class EmployeeAttendanceApiIntegrationTest {
         punch("7", "2026-11-01T00:00:00");
         punch("8", "2026-10-01T07:00:00"); // another person
 
-        token = objectMapper.readTree(mockMvc.perform(post("/api/v1/auth/login").contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"admin@test.local\",\"password\":\"Admin@12345\"}")).andReturn().getResponse()
-                .getContentAsString()).get("data").get("access_token").asString();
+        token = TestAuth.adminToken(mockMvc, objectMapper);
     }
 
     private Employee employee(String code, String userCode, String name, Department department, boolean active) {

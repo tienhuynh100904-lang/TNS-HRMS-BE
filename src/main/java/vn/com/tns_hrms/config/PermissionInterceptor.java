@@ -6,44 +6,45 @@ import org.springframework.web.servlet.HandlerMapping;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import vn.com.tns_hrms.entity.Account;
+import vn.com.tns_hrms.entity.ApiClient;
 import vn.com.tns_hrms.entity.Role;
 import vn.com.tns_hrms.exception.PermissionException;
-import vn.com.tns_hrms.service.AccountService;
+import vn.com.tns_hrms.service.ApiClientService;
 import vn.com.tns_hrms.util.SecurityUtil;
 
 /**
  * Authorises each authenticated request against the permissions (apiPath + HTTP method) granted to the
- * caller's role. ADMIN bypasses the check.
+ * role of the calling client. ADMIN bypasses the check. The client is read on every request, so deactivating a
+ * client or changing its role takes effect at once, even for access tokens that have not expired yet.
  */
 @Component
 public class PermissionInterceptor implements HandlerInterceptor {
     private static final String DENIED = "You do not have permission to access this endpoint";
 
-    private final AccountService accountService;
+    private final ApiClientService clientService;
 
-    public PermissionInterceptor(AccountService accountService) {
-        this.accountService = accountService;
+    public PermissionInterceptor(ApiClientService clientService) {
+        this.clientService = clientService;
     }
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        String email = SecurityUtil.getCurrentUserLogin().orElse("");
-        if (email.isEmpty()) {
+        String clientId = SecurityUtil.getCurrentUserLogin().orElse("");
+        if (clientId.isEmpty()) {
             // Unauthenticated requests are rejected by the security filter chain unless the path is whitelisted.
             return true;
         }
 
-        Account account = this.accountService.getUserByEmail(email);
-        if (account == null || !account.isActive()) {
+        ApiClient client = this.clientService.getByClientId(clientId);
+        if (client == null || !client.isActive()) {
             throw new PermissionException(DENIED);
         }
 
-        Role role = account.getRole();
+        Role role = client.getRole();
         if (role == null || !role.isActive()) {
             throw new PermissionException(DENIED);
         }
-        if (AccountService.ADMIN_ROLE.equals(role.getName())) {
+        if (Role.ADMIN.equals(role.getName())) {
             return true;
         }
 

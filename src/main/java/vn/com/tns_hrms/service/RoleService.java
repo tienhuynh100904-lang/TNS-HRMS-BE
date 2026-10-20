@@ -76,8 +76,8 @@ public class RoleService {
             throw new ResourceAlreadyExistsException("Another role already exists with name: " + reqRole.getName());
         }
 
-        if (AccountService.ADMIN_ROLE.equals(existingRole.getName())
-                && (!AccountService.ADMIN_ROLE.equals(reqRole.getName()) || !reqRole.isActive())) {
+        if (Role.ADMIN.equals(existingRole.getName())
+                && (!Role.ADMIN.equals(reqRole.getName()) || !reqRole.isActive())) {
             throw new BadRequestException("The ADMIN role cannot be renamed or deactivated");
         }
 
@@ -100,11 +100,11 @@ public class RoleService {
         Role existingRole = roleRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Role not found with id: " + id));
 
-        if (AccountService.ADMIN_ROLE.equals(existingRole.getName())) {
+        if (Role.ADMIN.equals(existingRole.getName())) {
             throw new BadRequestException("The ADMIN role cannot be deleted");
         }
-        if (existingRole.getAccounts() != null && !existingRole.getAccounts().isEmpty()) {
-            throw new BadRequestException("Cannot delete role because it is currently assigned to one or more accounts");
+        if (existingRole.getClients() != null && !existingRole.getClients().isEmpty()) {
+            throw new BadRequestException("Cannot delete role because it is currently assigned to one or more clients");
         }
 
         roleRepository.delete(existingRole);

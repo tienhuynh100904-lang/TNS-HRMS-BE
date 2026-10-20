@@ -3,17 +3,12 @@
     {
       "name": "jwt.secret.base64",
       "type": "java.lang.String",
-      "description": "Base64 encoded HS512 signing key for access and refresh tokens (at least 64 bytes). Override with JWT_SECRET_BASE64."
+      "description": "Base64 encoded HS512 signing key for the access tokens (at least 64 bytes). Override with JWT_SECRET_BASE64."
     },
     {
-      "name": "jwt.access-token-validity-in-seconds",
+      "name": "app.oauth2.access-token-validity-in-seconds",
       "type": "java.lang.Long",
-      "description": "Access token lifetime in seconds."
-    },
-    {
-      "name": "jwt.refresh-token-validity-in-seconds",
-      "type": "java.lang.Long",
-      "description": "Refresh token lifetime in seconds; also the max age of the refreshToken cookie."
+      "description": "Lifetime in seconds of the access token a client gets from POST /oauth2/token (client credentials grant)."
     },
     {
       "name": "app.cors.allowed-origins",
@@ -21,14 +16,14 @@
       "description": "Comma separated list of origins allowed by CORS."
     },
     {
-      "name": "app.seed.admin-email",
+      "name": "app.seed.admin-client-id",
       "type": "java.lang.String",
-      "description": "Email of the default admin account created on first start when no account exists."
+      "description": "Client id of the default ADMIN client created on first start when no client exists."
     },
     {
-      "name": "app.seed.admin-password",
+      "name": "app.seed.admin-client-secret",
       "type": "java.lang.String",
-      "description": "Password of the default admin account created on first start."
+      "description": "Secret of the default ADMIN client. When empty a random secret is generated and printed once in the log."
     },
     {
       "name": "app.attendance.pull.enabled",

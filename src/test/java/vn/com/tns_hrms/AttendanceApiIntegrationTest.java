@@ -95,10 +95,7 @@ class AttendanceApiIntegrationTest {
     }
 
     private String adminToken() throws Exception {
-        MvcResult result = mockMvc.perform(post("/api/v1/auth/login").contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"admin@test.local\",\"password\":\"Admin@12345\"}")).andReturn();
-        return objectMapper.readTree(result.getResponse().getContentAsString()).get("data").get("access_token")
-                .asString();
+        return TestAuth.adminToken(mockMvc, objectMapper);
     }
 
     private JsonNode call(String url) throws Exception {

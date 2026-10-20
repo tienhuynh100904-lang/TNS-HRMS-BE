@@ -5,33 +5,36 @@ import javax.crypto.SecretKey;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.core.annotation.Order;
 import org.springframework.security.config.Customizer;
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configurers.oauth2.server.authorization.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.oauth2.core.DelegatingOAuth2TokenValidator;
-import org.springframework.security.oauth2.core.OAuth2Error;
-import org.springframework.security.oauth2.core.OAuth2TokenValidator;
-import org.springframework.security.oauth2.core.OAuth2TokenValidatorResult;
-import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.security.oauth2.server.authorization.OAuth2TokenType;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
-import org.springframework.security.oauth2.jwt.JwtValidators;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtEncoder;
+import org.springframework.security.oauth2.server.authorization.token.JwtEncodingContext;
+import org.springframework.security.oauth2.server.authorization.token.OAuth2TokenCustomizer;
 import org.springframework.security.web.SecurityFilterChain;
 
 import com.nimbusds.jose.jwk.source.ImmutableSecret;
 
 import vn.com.tns_hrms.util.SecurityUtil;
 
+/**
+ * The application is its own OAuth2 authorization server (client credentials grant only, POST /oauth2/token) and a
+ * resource server that accepts the access tokens it issued. There are no users and no sessions.
+ */
 @Configuration
 @EnableMethodSecurity(securedEnabled = true)
 public class SecurityConfiguration {
+    public static final String TOKEN_ENDPOINT = "/oauth2/token";
+
     private final CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
 
     @Value("${jwt.secret.base64}")
@@ -41,26 +44,32 @@ public class SecurityConfiguration {
         this.customAuthenticationEntryPoint = customAuthenticationEntryPoint;
     }
 
-    @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
-        return config.getAuthenticationManager();
-    }
-
+    // hashes the client secrets, and is also the encoder the authorization server checks them with
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
+    /** The token endpoint only: every other authorization server endpoint stays closed. */
     @Bean
+    @Order(1)
+    public SecurityFilterChain authorizationServerSecurityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .securityMatcher(TOKEN_ENDPOINT)
+                .with(new OAuth2AuthorizationServerConfigurer(), Customizer.withDefaults())
+                .csrf(c -> c.disable())
+                .authorizeHttpRequests(authz -> authz.anyRequest().authenticated())
+                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+        return http.build();
+    }
+
+    @Bean
+    @Order(2)
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         String[] whiteList = {
                 "/",
                 "/error",
-                "/actuator/health",
-                "/api/v1/auth/login",
-                "/api/v1/auth/refresh",
-                "/api/v1/auth/send-verification-email",
-                "/api/v1/auth/reset-password"
+                "/actuator/health"
         };
 
         http
@@ -89,18 +98,20 @@ public class SecurityConfiguration {
 
     @Bean
     public JwtDecoder jwtDecoder() {
-        NimbusJwtDecoder jwtDecoder = NimbusJwtDecoder
+        return NimbusJwtDecoder
                 .withSecretKey(getSecretKey())
                 .macAlgorithm(SecurityUtil.JWT_ALGORITHM)
                 .build();
+    }
 
-        // A refresh token is only valid on /auth/refresh, never as a bearer access token.
-        OAuth2TokenValidator<Jwt> notRefreshToken = jwt -> SecurityUtil.TOKEN_TYPE_REFRESH
-                .equals(jwt.getClaimAsString(SecurityUtil.TOKEN_TYPE_CLAIM))
-                        ? OAuth2TokenValidatorResult.failure(
-                                new OAuth2Error("invalid_token", "Invalid token: refresh token used as access token", null))
-                        : OAuth2TokenValidatorResult.success();
-        jwtDecoder.setJwtValidator(new DelegatingOAuth2TokenValidator<>(JwtValidators.createDefault(), notRefreshToken));
-        return jwtDecoder;
+    // the authorization server signs with RS256 unless told otherwise: sign with the same HS512 key the decoder checks
+    @Bean
+    public OAuth2TokenCustomizer<JwtEncodingContext> jwtCustomizer() {
+        return context -> {
+            if (OAuth2TokenType.ACCESS_TOKEN.equals(context.getTokenType())) {
+                context.getJwsHeader().algorithm(SecurityUtil.JWT_ALGORITHM);
+                context.getClaims().claim("client_id", context.getRegisteredClient().getClientId());
+            }
+        };
     }
 }

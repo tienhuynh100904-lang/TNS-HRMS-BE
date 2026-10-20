@@ -3,7 +3,6 @@ package vn.com.tns_hrms;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -66,9 +65,7 @@ class EmployeeWriteApiIntegrationTest {
                 });
         a = employee("TNS0001", "1", "Nguyễn Văn A");
         b = employee("TNS0002", "2", "Trần Thị B");
-        token = objectMapper.readTree(mockMvc.perform(post("/api/v1/auth/login").contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"admin@test.local\",\"password\":\"Admin@12345\"}")).andReturn().getResponse()
-                .getContentAsString()).get("data").get("access_token").asString();
+        token = TestAuth.adminToken(mockMvc, objectMapper);
     }
 
     private Employee employee(String code, String userCode, String name) {

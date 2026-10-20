@@ -29,6 +29,8 @@ import vn.com.tns_hrms.util.SecurityUtil;
 @Getter
 @Setter
 public class Role {
+    public static final String ADMIN = "ADMIN";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -45,7 +47,7 @@ public class Role {
 
     @OneToMany(mappedBy = "role", fetch = FetchType.LAZY)
     @JsonIgnore
-    private List<Account> accounts;
+    private List<ApiClient> clients;
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(

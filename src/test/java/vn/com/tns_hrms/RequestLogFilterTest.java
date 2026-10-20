@@ -63,8 +63,8 @@ class RequestLogFilterTest {
 
     @Test
     void neverLogsTheTokenAndSkipsOptionsCalls() throws Exception {
-        mockMvc.perform(get("/api/v1/accounts").header("Authorization", "Bearer secret-token-123"));
-        mockMvc.perform(options("/api/v1/accounts"));
+        mockMvc.perform(get("/api/v1/clients").header("Authorization", "Bearer secret-token-123"));
+        mockMvc.perform(options("/api/v1/clients"));
 
         assertFalse(lines().stream().anyMatch(l -> l.contains("secret-token-123")));
         assertEquals(2, lines().size()); // only the GET, not the OPTIONS

@@ -21,7 +21,6 @@ import org.junit.jupiter.api.io.TempDir;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -75,9 +74,7 @@ class PunchPullApiIntegrationTest {
         properties.setOutputDir(dir.resolve("out").toString());
         properties.setDevices(List.of(device("PKD_ND", "10.0.0.1")));
 
-        token = objectMapper.readTree(mockMvc.perform(post("/api/v1/auth/login").contentType(MediaType.APPLICATION_JSON)
-                .content("{\"email\":\"admin@test.local\",\"password\":\"Admin@12345\"}")).andReturn().getResponse()
-                .getContentAsString()).get("data").get("access_token").asString();
+        token = TestAuth.adminToken(mockMvc, objectMapper);
     }
 
     @AfterEach

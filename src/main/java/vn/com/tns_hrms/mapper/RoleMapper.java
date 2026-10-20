@@ -29,7 +29,7 @@ public interface RoleMapper {
     @Mapping(target = "updatedAt", ignore = true)
     @Mapping(target = "createdBy", ignore = true)
     @Mapping(target = "updatedBy", ignore = true)
-    @Mapping(target = "accounts", ignore = true)
+    @Mapping(target = "clients", ignore = true)
     @Mapping(target = "permissions", ignore = true)
     Role toEntity(ReqRole reqRole);
 }

@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import vn.com.tns_hrms.entity.Permission;
 import vn.com.tns_hrms.entity.Role;
 import vn.com.tns_hrms.repository.RoleRepository;
-import vn.com.tns_hrms.service.AccountService;
 
 @Component
 public class RoleSeeder {
@@ -30,13 +29,13 @@ public class RoleSeeder {
     public void seed(List<Permission> permissions) {
         log.info(">>> Init Roles");
 
-        // Default USER permissions, as apiPath values. /api/v1/auth/** needs no permission.
+        // Default USER permissions, as apiPath values.
         List<String> userPermissionPaths = List.of();
 
         initRole(USER_ROLE, "Standard user", permissions, userPermissionPaths);
 
         // ADMIN is granted every permission (and bypasses the permission check anyway).
-        initRole(AccountService.ADMIN_ROLE, "Administrator", permissions, null);
+        initRole(Role.ADMIN, "Administrator", permissions, null);
     }
 
     private void initRole(String roleName, String description, List<Permission> allPermissions,
