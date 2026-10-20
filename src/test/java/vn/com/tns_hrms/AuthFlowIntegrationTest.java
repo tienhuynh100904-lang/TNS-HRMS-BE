@@ -171,6 +171,41 @@ class AuthFlowIntegrationTest {
     }
 
     @Test
+    void clientRoleCanOnlyReadTheThreeAttendanceEndpoints() throws Exception {
+        String adminToken = adminToken();
+        MvcResult roles = mockMvc.perform(get("/api/v1/roles").header("Authorization", "Bearer " + adminToken))
+                .andReturn();
+        long clientRoleId = roleId(adminToken, "CLIENT");
+        MvcResult detail = mockMvc.perform(get("/api/v1/roles/" + clientRoleId)
+                .header("Authorization", "Bearer " + adminToken)).andExpect(status().isOk()).andReturn();
+        java.util.Set<String> granted = new java.util.TreeSet<>();
+        for (JsonNode p : json(detail).get("data").get("permissions")) {
+            granted.add(p.get("method").asString() + " " + p.get("apiPath").asString());
+        }
+        assertEquals(java.util.Set.of("GET /api/v1/attendance/users", "GET /api/v1/attendance/monthly",
+                "GET /api/v1/attendance/daily"), granted);
+        assertTrue(json(roles).get("data").get("result").size() >= 3);
+
+        JsonNode created = createClient(adminToken, "CLIENT");
+        String token = TestAuth.accessToken(mockMvc, objectMapper, created.get("clientId").asString(),
+                created.get("clientSecret").asString());
+        String auth = "Bearer " + token;
+
+        mockMvc.perform(get("/api/v1/attendance/daily?date=2026-10-14").header("Authorization", auth))
+                .andExpect(status().isOk());
+        mockMvc.perform(get("/api/v1/attendance/users?date=2026-10-14").header("Authorization", auth))
+                .andExpect(status().isOk());
+        mockMvc.perform(get("/api/v1/attendance/monthly?employeeId=999999").header("Authorization", auth))
+                .andExpect(status().isNotFound()); // allowed through, the employee just does not exist
+
+        mockMvc.perform(post("/api/v1/attendance/pull").header("Authorization", auth))
+                .andExpect(status().isForbidden());
+        mockMvc.perform(get("/api/v1/employees").header("Authorization", auth)).andExpect(status().isForbidden());
+        mockMvc.perform(get("/api/v1/clients").header("Authorization", auth)).andExpect(status().isForbidden());
+        mockMvc.perform(get("/api/v1/roles").header("Authorization", auth)).andExpect(status().isForbidden());
+    }
+
+    @Test
     void secretIsShownOnceAndRenewingItStopsTheOldOne() throws Exception {
         String adminToken = adminToken();
         JsonNode created = createClient(adminToken, "USER");
