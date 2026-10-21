@@ -1,74 +1,127 @@
-{
-  "properties": [
-    {
-      "name": "jwt.secret.base64",
-      "type": "java.lang.String",
-      "description": "Base64 encoded HS512 signing key for the access tokens (at least 64 bytes). Override with JWT_SECRET_BASE64."
-    },
-    {
-      "name": "app.oauth2.access-token-validity-in-seconds",
-      "type": "java.lang.Long",
-      "description": "Lifetime in seconds of the access token a client gets from POST /oauth2/token (client credentials grant)."
-    },
-    {
-      "name": "app.cors.allowed-origins",
-      "type": "java.lang.String",
-      "description": "Comma separated list of origins allowed by CORS."
-    },
-    {
-      "name": "app.seed.admin-client-id",
-      "type": "java.lang.String",
-      "description": "Client id of the default ADMIN client created on first start when no client exists."
-    },
-    {
-      "name": "app.seed.admin-client-secret",
-      "type": "java.lang.String",
-      "description": "Secret of the default ADMIN client. When empty a random secret is generated and printed once in the log."
-    },
-    {
-      "name": "app.attendance.pull.enabled",
-      "type": "java.lang.Boolean",
-      "description": "Run the nightly pull of punches from the attendance devices. Off by default so a developer machine never contacts a real device."
-    },
-    {
-      "name": "app.attendance.pull.cron",
-      "type": "java.lang.String",
-      "description": "Cron expression (Asia/Ho_Chi_Minh time) of the nightly pull. Default 01:00."
-    },
-    {
-      "name": "app.attendance.pull.run-on-startup",
-      "type": "java.lang.Boolean",
-      "description": "Also pull once as soon as the application has started, without waiting for the cron time. For testing."
-    },
-    {
-      "name": "app.attendance.pull.python",
-      "type": "java.lang.String",
-      "description": "Command that starts Python, used to run the pull script."
-    },
-    {
-      "name": "app.attendance.pull.script-dir",
-      "type": "java.lang.String",
-      "description": "Folder that holds the pull scripts. Each device names its script (default zk_pull_punches.py)."
-    },
-    {
-      "name": "app.attendance.pull.output-dir",
-      "type": "java.lang.String",
-      "description": "Folder for the temporary CSV and log of each pull."
-    },
-    {
-      "name": "app.attendance.pull.timeout-minutes",
-      "type": "java.lang.Integer",
-      "description": "A pull that takes longer than this many minutes is stopped."
-    },
-    {
-      "name": "app.attendance.pull.overlap-hours",
-      "type": "java.lang.Integer",
-      "description": "Each pull re-reads this many hours before the newest stored punch; duplicates are dropped by the importer."
-    },
-    {
-      "name": "app.attendance.pull.devices",
-      "type": "java.util.List",
-      "description": "Devices to pull, each with branch-code, ip, port (default 4370), password (default 0) and script (default zk_pull_punches.py)."
-    }
-  ]
-}
+{"properties": [
+  {
+    "name": "jwt.secret.base64",
+    "type": "java.lang.String",
+    "description": "Base64 encoded HS512 signing key for the access tokens (at least 64 bytes). Override with JWT_SECRET_BASE64."
+  },
+  {
+    "name": "app.oauth2.access-token-validity-in-seconds",
+    "type": "java.lang.Long",
+    "description": "Lifetime in seconds of the access token a client gets from POST /oauth2/token (client credentials grant)."
+  },
+  {
+    "name": "app.cors.allowed-origins",
+    "type": "java.lang.String",
+    "description": "Comma separated list of origins allowed by CORS."
+  },
+  {
+    "name": "app.seed.admin-client-id",
+    "type": "java.lang.String",
+    "description": "Client id of the default ADMIN client created on first start when no client exists."
+  },
+  {
+    "name": "app.seed.admin-client-secret",
+    "type": "java.lang.String",
+    "description": "Secret of the default ADMIN client. When empty a random secret is generated and printed once in the log."
+  },
+  {
+    "name": "app.attendance.pull.enabled",
+    "type": "java.lang.Boolean",
+    "description": "Run the nightly pull of punches from the attendance devices. Off by default so a developer machine never contacts a real device."
+  },
+  {
+    "name": "app.attendance.pull.cron",
+    "type": "java.lang.String",
+    "description": "Cron expression (Asia/Ho_Chi_Minh time) of the nightly pull. Default 01:00."
+  },
+  {
+    "name": "app.attendance.pull.run-on-startup",
+    "type": "java.lang.Boolean",
+    "description": "Also pull once as soon as the application has started, without waiting for the cron time. For testing."
+  },
+  {
+    "name": "app.attendance.pull.python",
+    "type": "java.lang.String",
+    "description": "Command that starts Python, used to run the pull script."
+  },
+  {
+    "name": "app.attendance.pull.script-dir",
+    "type": "java.lang.String",
+    "description": "Folder that holds the pull scripts. Each device names its script (default zk_pull_punches.py)."
+  },
+  {
+    "name": "app.attendance.pull.output-dir",
+    "type": "java.lang.String",
+    "description": "Folder for the temporary CSV and log of each pull."
+  },
+  {
+    "name": "app.attendance.pull.timeout-minutes",
+    "type": "java.lang.Integer",
+    "description": "A pull that takes longer than this many minutes is stopped."
+  },
+  {
+    "name": "app.attendance.pull.overlap-hours",
+    "type": "java.lang.Integer",
+    "description": "Each pull re-reads this many hours before the newest stored punch; duplicates are dropped by the importer."
+  },
+  {
+    "name": "app.attendance.pull.devices",
+    "type": "java.util.List",
+    "description": "Devices to pull, each with branch-code, ip, port (default 4370), password (default 0) and script (default zk_pull_punches.py)."
+  },
+  {
+    "name": "app.rate-limit.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.enabled'"
+  },
+  {
+    "name": "app.rate-limit.token-per-ip.per-minute",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.token-per-ip.per-minute'"
+  },
+  {
+    "name": "app.rate-limit.token-per-ip.burst",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.token-per-ip.burst'"
+  },
+  {
+    "name": "app.rate-limit.token-per-client.burst",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.token-per-client.burst'"
+  },
+  {
+    "name": "app.rate-limit.api-per-client.per-minute",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.api-per-client.per-minute'"
+  },
+  {
+    "name": "app.rate-limit.api-per-ip.per-minute",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.api-per-ip.per-minute'"
+  },
+  {
+    "name": "app.rate-limit.pull.burst",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.pull.burst'"
+  },
+  {
+    "name": "app.rate-limit.pull.per-minute",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.pull.per-minute'"
+  },
+  {
+    "name": "app.rate-limit.api-per-ip.burst",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.api-per-ip.burst'"
+  },
+  {
+    "name": "app.rate-limit.token-per-client.per-minute",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.token-per-client.per-minute'"
+  },
+  {
+    "name": "app.rate-limit.api-per-client.burst",
+    "type": "java.lang.String",
+    "description": "A description for 'app.rate-limit.api-per-client.burst'"
+  }
+]}

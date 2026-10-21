@@ -20,10 +20,16 @@ import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtEncoder;
 import org.springframework.security.oauth2.server.authorization.token.JwtEncodingContext;
 import org.springframework.security.oauth2.server.authorization.token.OAuth2TokenCustomizer;
+import org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.session.DisableEncodeUrlFilter;
+import org.springframework.web.filter.CorsFilter;
 
 import com.nimbusds.jose.jwk.source.ImmutableSecret;
 
+import vn.com.tns_hrms.config.ratelimit.ClientRateLimitFilter;
+import vn.com.tns_hrms.config.ratelimit.RateLimitFilter;
+import vn.com.tns_hrms.config.ratelimit.RateLimitService;
 import vn.com.tns_hrms.util.SecurityUtil;
 
 /**
@@ -36,12 +42,15 @@ public class SecurityConfiguration {
     public static final String TOKEN_ENDPOINT = "/oauth2/token";
 
     private final CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
+    private final RateLimitService rateLimitService;
 
     @Value("${jwt.secret.base64}")
     private String jwtKey;
 
-    public SecurityConfiguration(CustomAuthenticationEntryPoint customAuthenticationEntryPoint) {
+    public SecurityConfiguration(CustomAuthenticationEntryPoint customAuthenticationEntryPoint,
+            RateLimitService rateLimitService) {
         this.customAuthenticationEntryPoint = customAuthenticationEntryPoint;
+        this.rateLimitService = rateLimitService;
     }
 
     // hashes the client secrets, and is also the encoder the authorization server checks them with
@@ -57,6 +66,8 @@ public class SecurityConfiguration {
         http
                 .securityMatcher(TOKEN_ENDPOINT)
                 .with(new OAuth2AuthorizationServerConfigurer(), Customizer.withDefaults())
+                // first of the chain: a guessed secret must be stopped before the client is even checked
+                .addFilterBefore(new RateLimitFilter(rateLimitService), DisableEncodeUrlFilter.class)
                 .csrf(c -> c.disable())
                 .authorizeHttpRequests(authz -> authz.anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
@@ -75,6 +86,9 @@ public class SecurityConfiguration {
         http
                 .csrf(c -> c.disable())
                 .cors(Customizer.withDefaults())
+                // per IP right after CORS (so a 429 carries the CORS headers), per client once the token is checked
+                .addFilterAfter(new RateLimitFilter(rateLimitService), CorsFilter.class)
+                .addFilterAfter(new ClientRateLimitFilter(rateLimitService), BearerTokenAuthenticationFilter.class)
                 .authorizeHttpRequests(authz -> authz
                         .requestMatchers(whiteList).permitAll()
                         .anyRequest().authenticated())
